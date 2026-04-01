@@ -1,0 +1,10 @@
+node_modules/
+dist/
+cli
+cli-dev
+cli-dev.exe
+*.exe
+.env
+.env.*
+*.log
+*.bun-build
