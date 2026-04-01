@@ -1,6 +1,6 @@
 @echo off
 REM Doro - Jesse's AI Coding Agent
-REM This script launches Doro with Alibaba Cloud Bailian API
+REM This script launches Doro with Alibaba Cloud Bailian Coding Plan
 
 REM Check for API key
 if not defined ANTHROPIC_API_KEY (
@@ -12,9 +12,9 @@ if not defined ANTHROPIC_API_KEY (
     exit /b 1
 )
 
-REM Set Alibaba Cloud Bailian endpoint
+REM Set Alibaba Cloud Bailian Coding Plan endpoint
 if not defined ANTHROPIC_BASE_URL (
-    set "ANTHROPIC_BASE_URL=https://dashscope.aliyuncs.com/apps/anthropic"
+    set "ANTHROPIC_BASE_URL=https://coding.dashscope.aliyuncs.com/apps/anthropic"
 )
 
 REM Set default model for Bailian (qwen3-coder-plus)

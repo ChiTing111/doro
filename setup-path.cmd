@@ -22,13 +22,13 @@ echo Please enter your API key (from https://bailian.console.aliyun.com):
 set /p "API_KEY=API Key: "
 if not "%API_KEY%"=="" (
     setx ANTHROPIC_API_KEY "%API_KEY%"
-    setx ANTHROPIC_BASE_URL "https://dashscope.aliyuncs.com/apps/anthropic"
+    setx ANTHROPIC_BASE_URL "https://coding.dashscope.aliyuncs.com/apps/anthropic"
     setx ANTHROPIC_DEFAULT_SONNET_MODEL "qwen3-coder-plus"
     echo [+] API configured.
 ) else (
     echo [!] Skipped. You can set it later:
     echo     setx ANTHROPIC_API_KEY "your-key"
-    echo     setx ANTHROPIC_BASE_URL "https://dashscope.aliyuncs.com/apps/anthropic"
+    echo     setx ANTHROPIC_BASE_URL "https://coding.dashscope.aliyuncs.com/apps/anthropic"
     echo     setx ANTHROPIC_DEFAULT_SONNET_MODEL "qwen3-coder-plus"
 )
 

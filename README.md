@@ -59,10 +59,17 @@ Doro 已预配置为使用 **阿里云百炼** API：
 # Windows (PowerShell) - Set environment variables | 设置环境变量
 $env:ANTHROPIC_API_KEY = "your-api-key"
 $env:ANTHROPIC_BASE_URL = "https://coding.dashscope.aliyuncs.com/apps/anthropic"
+$env:ANTHROPIC_DEFAULT_SONNET_MODEL = "qwen3-coder-plus"
 
 # macOS / Linux
 export ANTHROPIC_API_KEY="your-api-key"
 export ANTHROPIC_BASE_URL="https://coding.dashscope.aliyuncs.com/apps/anthropic"
+export ANTHROPIC_DEFAULT_SONNET_MODEL="qwen3-coder-plus"
+
+# Permanent (Windows) | 永久设置（Windows）
+setx ANTHROPIC_API_KEY "your-api-key"
+setx ANTHROPIC_BASE_URL "https://coding.dashscope.aliyuncs.com/apps/anthropic"
+setx ANTHROPIC_DEFAULT_SONNET_MODEL "qwen3-coder-plus"
 ```
 
 ### Run | 运行
